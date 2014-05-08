@@ -31,6 +31,10 @@ body {
 			margin: 0 auto;
 		}
 	}
+
+	.site-description {
+		display: none;
+	}
 }
 
 
@@ -58,17 +62,4 @@ body {
 #secondary {
 	float: right;
 	width: 250px;
-}
-
-/* After Header Widgets */
-#after-header-widgets {
-	clear: both;
-	margin: 40px auto;
-	width: $site-width;
-
-	.widget {
-		float: left;
-		text-align: center;
-		width: 25%;
-	}
 }

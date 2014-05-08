@@ -3,10 +3,9 @@
 --------------------------------------------------------------*/
 nav {
 	background: rgb(255, 255, 255);
-	background: rgba(255, 255, 255, .8);
+	background: rgba(255, 255, 255, .7);
 	position: absolute;
 		bottom: 0;
-	@include transition(all, 400ms, ease-in-out);
 
 	&:hover {
 		//background: rgb(255, 255, 255);
@@ -20,13 +19,29 @@ nav {
 		a {
 			color: #000;
 			font-weight: bold;
+			font-size: 18px;
+			font-size: 1.8rem;
 			padding: 0 16px;
 			text-shadow: 1px 1px 1px #fff;
 			text-transform: uppercase;
+			@include transition(all, 200ms, ease-in-out);
 
 			&:hover {
-				background: rgba(255, 255, 255, .6)
+				background: rgba(255, 255, 255, .5)
 			}
 		}
 	}
+}
+
+/*--------------------------------------------------------------
+5.1 - Links
+--------------------------------------------------------------*/
+a,
+a:active,
+a:visited {
+	color: $color__orange-dark;
+}
+
+a:hover {
+	color: $color__orange;
 }

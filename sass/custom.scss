@@ -25,18 +25,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	5.1 - Links
 	5.2 - Menus
 	5.3 - Secondary toggle
-6.0 - Accessibility
-7.0 - Alignments
-8.0 - Clearings
-9.0 - Widgets
-10.0 - Content
-	10.1 - Posts and pages
-	10.2 - Asides
-	10.3 - Comments
-11.0 - Infinite scroll
-12.0 - Media
-	12.1 - Captions
-	12.2 - Galleries
+6.0 - Widgets
+
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -67,9 +57,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "navigation";
 
 /*--------------------------------------------------------------
-6.0 -
+6.0 - Widgets
 --------------------------------------------------------------*/
-
+@import "widgets";
 
 /*--------------------------------------------------------------
 7.0 -
