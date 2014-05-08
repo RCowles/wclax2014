@@ -1,0 +1,32 @@
+/*--------------------------------------------------------------
+5.0 - Navigation
+--------------------------------------------------------------*/
+nav {
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, .8);
+	position: absolute;
+		bottom: 0;
+	@include transition(all, 400ms, ease-in-out);
+
+	&:hover {
+		//background: rgb(255, 255, 255);
+		//background: rgba(255, 255, 255, 1.0);
+	}
+
+	.menu {
+		height: 65px;
+		line-height: 65px;
+
+		a {
+			color: #000;
+			font-weight: bold;
+			padding: 0 16px;
+			text-shadow: 1px 1px 1px #fff;
+			text-transform: uppercase;
+
+			&:hover {
+				background: rgba(255, 255, 255, .6)
+			}
+		}
+	}
+}

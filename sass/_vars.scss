@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+1.0 Variables
+--------------------------------------------------------------*/
+$site-width: 1100px;
+
+/*--------------------------------------------------------------
+1.1 Fonts
+--------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+$serif: serif;
+$sans-serif: 'Montserrat', sans-serif;
+
+/*--------------------------------------------------------------
+1.2 Colors
+--------------------------------------------------------------*/
+$color__black: #000;
+$color__gray-dark: #555e68;
+$color__gray-light: #dde3e6;
+$color__teal: #45ead2;
+$color__orange-dark: #fd7e23;
+$color__orange: #ffc097;
+$color__orange-light: #ffdfcb;
+
+/*--------------------------------------------------------------
+1.3 Mixins
+--------------------------------------------------------------*/
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}

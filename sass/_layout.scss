@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+3.2 - Layout
+--------------------------------------------------------------*/
+body {
+	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-footer.png") center bottom repeat-x;
+}
+
+/* Header */
+#masthead hgroup,
+#masthead nav ul {
+	float: none;
+	margin: 0 auto;
+	width: $site-width;
+}
+
+
+#masthead {
+	//background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg.jpg") center top no-repeat;
+	//background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_comp-v2-crop.jpg") center top no-repeat #000;
+	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat #000;
+	//height: 815px;
+	height: 620px;
+	position: relative;
+
+	.site-title {
+		text-align: center;
+
+		a {
+			content:url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
+			font-size: 0px;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+/* Content & Sidebar */
+#page {
+	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 620px repeat-x;
+}
+
+#main {
+	margin: 0 auto;
+	width: $site-width;
+}
+
+#colophon {
+	clear: both;
+	margin: 0 auto;
+	width: $site-width;
+}
+
+#primary {
+	float: left;
+	width: 820px;
+}
+
+#secondary {
+	float: right;
+	width: 250px;
+}
+
+/* After Header Widgets */
+#after-header-widgets {
+	clear: both;
+	margin: 40px auto;
+	width: $site-width;
+
+	.widget {
+		float: left;
+		text-align: center;
+		width: 25%;
+	}
+}

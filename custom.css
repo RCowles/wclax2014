@@ -1,0 +1,196 @@
+/*
+
+This is the Custom CSS for the WordCamp Los Angeles 2014 site.
+We'll develop the theme first, and then take the compiled CSS
+and add it to the site using Jetpack's Custom CSS module.
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 - Variables
+	1.1 - Fonts
+	1.2 - Colors
+2.0 - Typography
+	2.1 - Header
+3.0 - Elements and layout
+	3.1 - Elements
+	3.2 - Layout
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+	5.3 - Secondary toggle
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+	10.2 - Asides
+	10.3 - Comments
+11.0 - Infinite scroll
+12.0 - Media
+	12.1 - Captions
+	12.2 - Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 - Variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.0 Variables
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.1 Fonts
+--------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*--------------------------------------------------------------
+1.2 Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1.3 Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+2.0 - Typography
+--------------------------------------------------------------*/
+/* line 5, sass/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #fd7e23;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase; }
+
+/*--------------------------------------------------------------
+3.0 - Elements and Layout
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.1 - Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+3.2 - Layout
+--------------------------------------------------------------*/
+/* line 4, sass/_layout.scss */
+body {
+  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-footer.png") center bottom repeat-x; }
+
+/* Header */
+/* line 9, sass/_layout.scss */
+#masthead hgroup,
+#masthead nav ul {
+  float: none;
+  margin: 0 auto;
+  width: 1100px; }
+
+/* line 17, sass/_layout.scss */
+#masthead {
+  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat black;
+  height: 620px;
+  position: relative; }
+  /* line 25, sass/_layout.scss */
+  #masthead .site-title {
+    text-align: center; }
+    /* line 28, sass/_layout.scss */
+    #masthead .site-title a {
+      content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
+      font-size: 0px;
+      margin: 0 auto; }
+
+/* Content & Sidebar */
+/* line 38, sass/_layout.scss */
+#page {
+  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 620px repeat-x; }
+
+/* line 42, sass/_layout.scss */
+#main {
+  margin: 0 auto;
+  width: 1100px; }
+
+/* line 47, sass/_layout.scss */
+#colophon {
+  clear: both;
+  margin: 0 auto;
+  width: 1100px; }
+
+/* line 53, sass/_layout.scss */
+#primary {
+  float: left;
+  width: 820px; }
+
+/* line 58, sass/_layout.scss */
+#secondary {
+  float: right;
+  width: 250px; }
+
+/* After Header Widgets */
+/* line 64, sass/_layout.scss */
+#after-header-widgets {
+  clear: both;
+  margin: 40px auto;
+  width: 1100px; }
+  /* line 69, sass/_layout.scss */
+  #after-header-widgets .widget {
+    float: left;
+    text-align: center;
+    width: 25%; }
+
+/*--------------------------------------------------------------
+4.0 - Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.0 - Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+5.0 - Navigation
+--------------------------------------------------------------*/
+/* line 4, sass/_navigation.scss */
+nav {
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out; }
+  /* line 16, sass/_navigation.scss */
+  nav .menu {
+    height: 65px;
+    line-height: 65px; }
+    /* line 20, sass/_navigation.scss */
+    nav .menu a {
+      color: #000;
+      font-weight: bold;
+      padding: 0 16px;
+      text-shadow: 1px 1px 1px #fff;
+      text-transform: uppercase; }
+      /* line 27, sass/_navigation.scss */
+      nav .menu a:hover {
+        background: rgba(255, 255, 255, 0.6); }
+
+/*--------------------------------------------------------------
+6.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+7.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+8.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+11.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+12.0 -
+--------------------------------------------------------------*/
