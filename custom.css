@@ -73,7 +73,8 @@ h1.entry-title {
 h4 {
   font-size: 22px;
   font-size: 2.2rem;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: .5em 0; }
 
 /*--------------------------------------------------------------
 3.0 - Elements and Layout
@@ -191,40 +192,57 @@ nav.main-navigation {
       transition: all 200ms ease-in-out; }
     /* line 31, sass/_navigation.scss */
     nav.main-navigation .menu li:hover > a {
+      background: white;
       background: rgba(255, 255, 255, 0.5); }
-    /* line 35, sass/_navigation.scss */
+    /* line 36, sass/_navigation.scss */
     nav.main-navigation .menu li ul {
       background: white;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.9);
       top: 65px; }
-      /* line 40, sass/_navigation.scss */
+      /* line 41, sass/_navigation.scss */
       nav.main-navigation .menu li ul li:hover > a {
         background: #45ead2; }
+
+/* line 49, sass/_navigation.scss */
+.main-small-navigation {
+  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  display: block;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%; }
+  /* line 59, sass/_navigation.scss */
+  .main-small-navigation .menu-toggle {
+    font-size: 24px;
+    font-size: 2.4rem;
+    text-align: center; }
 
 /*--------------------------------------------------------------
 5.1 - Links
 --------------------------------------------------------------*/
-/* line 51, sass/_navigation.scss */
+/* line 72, sass/_navigation.scss */
 a,
 a:active,
 a:visited {
   color: #fd7e23;
   text-decoration: none; }
 
-/* line 58, sass/_navigation.scss */
+/* line 79, sass/_navigation.scss */
 a:hover {
   color: #ffc097; }
 
-/* line 63, sass/_navigation.scss */
+/* line 84, sass/_navigation.scss */
 #colophon a,
 #colophon a:active,
 #colophon a:visited {
   color: #555e68;
   text-shadow: 1px 1px 1px #fff; }
-/* line 70, sass/_navigation.scss */
+/* line 91, sass/_navigation.scss */
 #colophon a:hover {
   color: #555e68; }
-/* line 74, sass/_navigation.scss */
+/* line 95, sass/_navigation.scss */
 #colophon a.site-info-network {
   color: #ffc097;
   text-shadow: 1px 1px 1px #000; }

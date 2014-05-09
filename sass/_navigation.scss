@@ -29,12 +29,13 @@ nav.main-navigation {
 			}
 
 			&:hover > a {
-				background: rgba(255, 255, 255, .5)
+				background: rgb(255, 255, 255);
+				background: rgba(255, 255, 255, .5);
 			}
 
 			ul {
 				background: rgb(255, 255, 255);
-				background: rgba(255, 255, 255, .7);
+				background: rgba(255, 255, 255, .9);
 				top: 65px;
 
 				li:hover > a {
@@ -42,6 +43,26 @@ nav.main-navigation {
 				}
 			}
 		}
+	}
+}
+
+.main-small-navigation { // ¯\_(ツ)_/¯
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, .7);
+	display: block;
+	padding: 1em 0;
+	position: absolute;
+		bottom: 0;
+		text-align: center;
+	width: 100%;
+
+	.menu-toggle {
+		font-size: 24px;
+		font-size: 2.4rem;
+		text-align: center;
+	}
+
+	li a {
 	}
 }
 
