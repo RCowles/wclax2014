@@ -2,6 +2,15 @@
 2.0 - Typography
 --------------------------------------------------------------*/
 
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__gray-dark;
+	font-family: $sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	color: $color__orange-dark;
 	font-family: $sans-serif;
@@ -10,12 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
 
+	&.entry-title {
+		font-size: 48px;
+		font-size: 4.8rem;
+	}
 }
 
 h4 {
 	font-size: 22px;
 	font-size: 2.2rem;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 p {

@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 5.0 - Navigation
 --------------------------------------------------------------*/
-nav {
+nav.main-navigation {
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, .7);
 	position: absolute;
@@ -16,18 +16,30 @@ nav {
 		height: 65px;
 		line-height: 65px;
 
-		a {
-			color: #000;
-			font-weight: bold;
-			font-size: 18px;
-			font-size: 1.8rem;
-			padding: 0 16px;
-			text-shadow: 1px 1px 1px #fff;
-			text-transform: uppercase;
-			@include transition(all, 200ms, ease-in-out);
+		li {
+			a {
+				color: #000;
+				font-weight: 700;
+				font-size: 18px;
+				font-size: 1.8rem;
+				padding: 0 16px;
+				text-shadow: 1px 1px 1px #fff;
+				text-transform: uppercase;
+				@include transition(all, 200ms, ease-in-out);
+			}
 
-			&:hover {
+			&:hover > a {
 				background: rgba(255, 255, 255, .5)
+			}
+
+			ul {
+				background: rgb(255, 255, 255);
+				background: rgba(255, 255, 255, .7);
+				top: 65px;
+
+				li:hover > a {
+					background: $color__teal;
+				}
 			}
 		}
 	}
@@ -40,8 +52,27 @@ a,
 a:active,
 a:visited {
 	color: $color__orange-dark;
+	text-decoration: none;
 }
 
 a:hover {
 	color: $color__orange;
+}
+
+#colophon {
+	a,
+	a:active,
+	a:visited {
+		color: $color__gray-dark;
+		text-shadow: 1px 1px 1px #fff;
+	}
+
+	a:hover {
+		color: $color__gray-dark;
+	}
+
+	a.site-info-network {
+		color: $color__orange;
+		text-shadow: 1px 1px 1px #000;
+	}
 }

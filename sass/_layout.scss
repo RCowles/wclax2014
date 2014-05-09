@@ -7,7 +7,7 @@ body {
 
 /* Header */
 #masthead hgroup,
-#masthead nav ul {
+#masthead nav div > ul {
 	float: none;
 	margin: 0 auto;
 	width: $site-width;
@@ -26,7 +26,7 @@ body {
 		text-align: center;
 
 		a {
-			content:url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
+			content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
 			font-size: 0px;
 			margin: 0 auto;
 		}
@@ -62,4 +62,24 @@ body {
 #secondary {
 	float: right;
 	width: 250px;
+}
+
+/* Footer */
+#colophon {
+	padding: 20px 0;
+
+	.site-info-generator {
+		display: block;
+		text-align: center;
+
+		&:before {
+			content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_greyW-transparentBg.png");
+			display: block;
+		}
+	}
+
+	.site-info-network {
+		position: absolute;
+		top: 12px;
+	}
 }
