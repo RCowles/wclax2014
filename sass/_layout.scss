@@ -15,12 +15,14 @@ body {
 
 
 #masthead {
-	//background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg.jpg") center top no-repeat;
-	//background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_comp-v2-crop.jpg") center top no-repeat #000;
-	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat #000;
-	//height: 815px;
-	height: 620px;
+	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgSub.jpg") center top no-repeat #000;
+	height: $subheader-height;
 	position: relative;
+
+	.home & {
+		background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat #000;
+		height: $home-header-height;
+	}
 
 	.site-title {
 		text-align: center;
@@ -29,6 +31,11 @@ body {
 			content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
 			font-size: 0px;
 			margin: 0 auto;
+			height: 300px;
+
+			.home & {
+				height: 527px
+			}
 		}
 	}
 
@@ -40,7 +47,11 @@ body {
 
 /* Content & Sidebar */
 #page {
-	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 620px repeat-x;
+	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center $subheader-height repeat-x;
+
+	.home & {
+		background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center $home-header-height repeat-x;
+	}
 }
 
 #main {

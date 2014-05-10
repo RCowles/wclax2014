@@ -2,3 +2,7 @@
 *.scssc
 
 *.codekit
+
+*.sublime-project
+
+*.sublime-workspace

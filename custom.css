@@ -99,60 +99,71 @@ body {
 
 /* line 17, sass/_layout.scss */
 #masthead {
-  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat black;
-  height: 620px;
+  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgSub.jpg") center top no-repeat black;
+  height: 400px;
   position: relative; }
-  /* line 25, sass/_layout.scss */
+  /* line 22, sass/_layout.scss */
+  .home #masthead {
+    background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat black;
+    height: 620px; }
+  /* line 27, sass/_layout.scss */
   #masthead .site-title {
     text-align: center; }
-    /* line 28, sass/_layout.scss */
+    /* line 30, sass/_layout.scss */
     #masthead .site-title a {
       content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
       font-size: 0px;
-      margin: 0 auto; }
-  /* line 35, sass/_layout.scss */
+      margin: 0 auto;
+      height: 300px; }
+      /* line 36, sass/_layout.scss */
+      .home #masthead .site-title a {
+        height: 527px; }
+  /* line 42, sass/_layout.scss */
   #masthead .site-description {
     display: none; }
 
 /* Content & Sidebar */
-/* line 42, sass/_layout.scss */
+/* line 49, sass/_layout.scss */
 #page {
-  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 620px repeat-x; }
+  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 400px repeat-x; }
+  /* line 52, sass/_layout.scss */
+  .home #page {
+    background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 620px repeat-x; }
 
-/* line 46, sass/_layout.scss */
+/* line 57, sass/_layout.scss */
 #main {
   margin: 0 auto;
   width: 1100px; }
 
-/* line 51, sass/_layout.scss */
+/* line 62, sass/_layout.scss */
 #colophon {
   clear: both;
   margin: 0 auto;
   width: 1100px; }
 
-/* line 57, sass/_layout.scss */
+/* line 68, sass/_layout.scss */
 #primary {
   float: left;
   width: 820px; }
 
-/* line 62, sass/_layout.scss */
+/* line 73, sass/_layout.scss */
 #secondary {
   float: right;
   width: 250px; }
 
 /* Footer */
-/* line 68, sass/_layout.scss */
+/* line 79, sass/_layout.scss */
 #colophon {
   padding: 20px 0; }
-  /* line 71, sass/_layout.scss */
+  /* line 82, sass/_layout.scss */
   #colophon .site-info-generator {
     display: block;
     text-align: center; }
-    /* line 75, sass/_layout.scss */
+    /* line 86, sass/_layout.scss */
     #colophon .site-info-generator:before {
       content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_greyW-transparentBg.png");
       display: block; }
-  /* line 81, sass/_layout.scss */
+  /* line 92, sass/_layout.scss */
   #colophon .site-info-network {
     position: absolute;
     top: 12px; }
