@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+3.3 - Subpage layouts
+--------------------------------------------------------------*/
+
+/* Organizers Page */
+.wcorg-organizers {
+	clear: both;
+	overflow: hidden;
+
+	.wcorg-organizer {
+		float: left;
+		padding: 1%;
+		width: 23%;
+
+		img {
+			margin: 1em 0;
+			display: block;
+			width: 80%;
+			padding: 10%;
+			background: $color__gray-light;
+		}
+	}
+}

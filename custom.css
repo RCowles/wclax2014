@@ -19,6 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 3.0 - Elements and layout
 	3.1 - Elements
 	3.2 - Layout
+	3.3 - Subpage layouts
 4.0 - Forms
 5.0 - Navigation
 	5.1 - Links
@@ -169,6 +170,27 @@ body {
     top: 12px; }
 
 /*--------------------------------------------------------------
+3.3 - Subpage layouts
+--------------------------------------------------------------*/
+/* Organizers Page */
+/* line 6, sass/_subpages.scss */
+.wcorg-organizers {
+  clear: both;
+  overflow: hidden; }
+  /* line 10, sass/_subpages.scss */
+  .wcorg-organizers .wcorg-organizer {
+    float: left;
+    padding: 1%;
+    width: 23%; }
+    /* line 15, sass/_subpages.scss */
+    .wcorg-organizers .wcorg-organizer img {
+      margin: 1em 0;
+      display: block;
+      width: 80%;
+      padding: 10%;
+      background: #dde3e6; }
+
+/*--------------------------------------------------------------
 4.0 - Forms
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -287,20 +309,21 @@ a:hover {
 #after-header-widgets {
   clear: both;
   margin: 40px auto;
+  overflow: hidden;
   width: 1100px; }
-  /* line 36, sass/_widgets.scss */
+  /* line 37, sass/_widgets.scss */
   #after-header-widgets .widget {
     float: left;
     text-align: center;
     width: 25%; }
-    /* line 41, sass/_widgets.scss */
+    /* line 42, sass/_widgets.scss */
     #after-header-widgets .widget img {
       -webkit-transition: all 200ms ease-in-out;
       -moz-transition: all 200ms ease-in-out;
       -ms-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
-    /* line 45, sass/_widgets.scss */
+    /* line 46, sass/_widgets.scss */
     #after-header-widgets .widget:hover img {
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
