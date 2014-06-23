@@ -5,11 +5,17 @@ nav.main-navigation {
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, .7);
 	position: absolute;
-		bottom: 0;
+	bottom: 0;
 
 	&:hover {
 		//background: rgb(255, 255, 255);
 		//background: rgba(255, 255, 255, 1.0);
+	}
+	
+	.menu-primary-container {
+		width: 100%;
+		max-width: $site-width;
+		margin: 0 auto;
 	}
 
 	.menu {
@@ -26,6 +32,12 @@ nav.main-navigation {
 				text-shadow: 1px 1px 1px #fff;
 				text-transform: uppercase;
 				@include transition(all, 200ms, ease-in-out);
+					
+				@include bp(large) {
+					font-size: 16px;
+					font-size: 1.6rem;
+					padding: 0 0.75em;
+				}
 			}
 
 			&:hover > a {
@@ -63,6 +75,19 @@ nav.main-navigation {
 	}
 
 	li a {
+	}
+	
+	#menu-primary {
+		position: absolute;
+		top: 4.25em;
+		bottom: auto;
+		z-index: 100;
+		background: rgb(255, 255, 255);
+		background: rgba(255, 255, 255, .7);
+		
+		ul li {
+			list-style: none;
+		}
 	}
 }
 

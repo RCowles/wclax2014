@@ -46,7 +46,7 @@
 */ ?>
 
 <?php wp_head(); ?>
-<link rel="stylesheet" type="text/css" href="http://www.example.dev/wp-content/themes/wclax2014/custom.css">
+<link rel="stylesheet" type="text/css" href="http://local.la.wordcamp.org/wp-content/themes/wclax2014/custom.css">
 </head>
 
 <body <?php body_class(); ?>>

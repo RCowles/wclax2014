@@ -2,8 +2,13 @@
 1.0 Variables
 --------------------------------------------------------------*/
 $site-width: 1100px;
+$size-nav-fits: 870px;
 $home-header-height: 620px;
 $subheader-height: 400px; //578px;
+$subheader-height-medium: 380px; // for use in breakpoints
+$subheader-height-small: 250px;
+
+$scut-rem-base: 10;
 
 /*--------------------------------------------------------------
 1.1 Fonts
@@ -40,4 +45,16 @@ $color__orange-light: #ffdfcb;
 	-ms-transform: $type;
 	-o-transform: $type;
 	transform: $type;
+}
+
+@mixin bp($point) {
+  @if $point == large {
+    @media (max-width: $size-nav-fits) { @content; }
+  }
+  @else if $point == medium {
+    @media (max-width: 640px) { @content; }
+  }
+  @else if $point == small {
+    @media (max-width: 480px)  { @content; }
+  }
 }

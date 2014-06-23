@@ -44,13 +44,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*--------------------------------------------------------------
 1.3 Mixins
 --------------------------------------------------------------*/
+/*
+* Scut, a collection of Sass utilities
+* to ease and improve our implementations of common style-code patterns.
+* v0.10.4
+* Docs at http://davidtheclark.github.io/scut
+*/
 /*--------------------------------------------------------------
 2.0 - Typography
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 2.0 - Typography
 --------------------------------------------------------------*/
-/* line 5, sass/_typography.scss */
 body,
 button,
 input,
@@ -59,18 +64,15 @@ textarea {
   color: #555e68;
   font-family: "Montserrat", sans-serif; }
 
-/* line 14, sass/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #fd7e23;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase; }
 
-/* line 22, sass/_typography.scss */
 h1.entry-title {
   font-size: 48px;
   font-size: 4.8rem; }
 
-/* line 28, sass/_typography.scss */
 h4 {
   font-size: 22px;
   font-size: 2.2rem;
@@ -86,103 +88,145 @@ h4 {
 /*--------------------------------------------------------------
 3.2 - Layout
 --------------------------------------------------------------*/
-/* line 4, sass/_layout.scss */
 body {
   background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-footer.png") center bottom repeat-x; }
 
 /* Header */
-/* line 9, sass/_layout.scss */
 #masthead hgroup,
 #masthead nav div > ul {
   float: none;
   margin: 0 auto;
-  width: 1100px; }
+  width: 100%; }
 
-/* line 17, sass/_layout.scss */
 #masthead {
-  background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgSub.jpg") center top no-repeat black;
+  background: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_header-bgSub-opt.jpg") center top no-repeat black;
   height: 400px;
   position: relative; }
-  /* line 22, sass/_layout.scss */
+  @media (max-width: 640px) {
+    #masthead {
+      height: 380px; } }
+  @media (max-width: 480px) {
+    #masthead {
+      height: 250px; } }
   .home #masthead {
-    background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat black;
+    background: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_header-bgImg-fade-opt.jpg") center top no-repeat black;
     height: 620px; }
-  /* line 27, sass/_layout.scss */
+    @media (max-width: 640px) {
+      .home #masthead {
+        height: 380px; } }
+    @media (max-width: 480px) {
+      .home #masthead {
+        height: 250px; } }
   #masthead .site-title {
     text-align: center; }
-    /* line 30, sass/_layout.scss */
     #masthead .site-title a {
-      content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
+      background-image: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_logo-opt.png");
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
       font-size: 0px;
       margin: 0 auto;
-      height: 300px; }
-      /* line 36, sass/_layout.scss */
+      height: 300px;
+      display: block; }
       .home #masthead .site-title a {
         height: 527px; }
-  /* line 42, sass/_layout.scss */
+        @media (max-width: 870px) {
+          .home #masthead .site-title a {
+            height: 449px; } }
+        @media (max-width: 640px) {
+          .home #masthead .site-title a {
+            height: 300px; } }
+        @media (max-width: 480px) {
+          .home #masthead .site-title a {
+            height: 160px; } }
+      @media (max-width: 480px) {
+        #masthead .site-title a {
+          height: 160px; } }
   #masthead .site-description {
     display: none; }
 
 /* Content & Sidebar */
-/* line 49, sass/_layout.scss */
 #page {
   background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 400px repeat-x; }
-  /* line 52, sass/_layout.scss */
+  @media (max-width: 640px) {
+    #page {
+      background-position: center 380px; } }
+  @media (max-width: 480px) {
+    #page {
+      background-position: center 250px; } }
   .home #page {
     background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center 620px repeat-x; }
+    @media (max-width: 640px) {
+      .home #page {
+        background-position: center 380px; } }
+    @media (max-width: 480px) {
+      .home #page {
+        background-position: center 250px; } }
 
-/* line 57, sass/_layout.scss */
 #main {
   margin: 0 auto;
-  width: 1100px; }
+  width: 100%;
+  max-width: 1100px; }
+  #main:after {
+    content: "";
+    display: table;
+    clear: both; }
 
-/* line 62, sass/_layout.scss */
 #colophon {
   clear: both;
   margin: 0 auto;
-  width: 1100px; }
+  width: 100%; }
 
-/* line 68, sass/_layout.scss */
 #primary {
   float: left;
-  width: 820px; }
+  width: 72%;
+  margin-left: 1.5%; }
+  @media (max-width: 640px) {
+    #primary {
+      float: none;
+      width: 90%;
+      margin: 1em auto; } }
 
-/* line 73, sass/_layout.scss */
 #secondary {
   float: right;
-  width: 250px; }
+  width: 22%;
+  margin-right: 1.5%; }
+  @media (max-width: 640px) {
+    #secondary {
+      float: none;
+      width: 90%;
+      margin: 1em auto; } }
 
 /* Footer */
-/* line 79, sass/_layout.scss */
 #colophon {
   padding: 20px 0; }
-  /* line 82, sass/_layout.scss */
   #colophon .site-info-generator {
     display: block;
     text-align: center; }
-    /* line 86, sass/_layout.scss */
     #colophon .site-info-generator:before {
       content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_greyW-transparentBg.png");
       display: block; }
-  /* line 92, sass/_layout.scss */
   #colophon .site-info-network {
     position: absolute;
-    top: 12px; }
+    top: 12px;
+    left: 4px; }
+    @media (max-width: 480px) {
+      #colophon .site-info-network {
+        top: 6px;
+        font-size: 11px;
+        font-size: 1.1rem; } }
 
 /*--------------------------------------------------------------
 3.3 - Subpage layouts
 --------------------------------------------------------------*/
 /* Organizers Page */
-/* line 6, sass/_subpages.scss */
 .wcorg-organizers {
   clear: both;
   overflow: hidden; }
-  /* line 10, sass/_subpages.scss */
   .wcorg-organizers .wcorg-organizer {
     float: left;
     padding: 1%;
     width: 23%; }
-    /* line 15, sass/_subpages.scss */
     .wcorg-organizers .wcorg-organizer img {
       margin: 1em 0;
       display: block;
@@ -199,17 +243,18 @@ body {
 /*--------------------------------------------------------------
 5.0 - Navigation
 --------------------------------------------------------------*/
-/* line 4, sass/_navigation.scss */
 nav.main-navigation {
   background: white;
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
   bottom: 0; }
-  /* line 15, sass/_navigation.scss */
+  nav.main-navigation .menu-primary-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto; }
   nav.main-navigation .menu {
     height: 65px;
     line-height: 65px; }
-    /* line 20, sass/_navigation.scss */
     nav.main-navigation .menu li a {
       color: #000;
       font-weight: 700;
@@ -223,20 +268,21 @@ nav.main-navigation {
       -ms-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
-    /* line 31, sass/_navigation.scss */
+      @media (max-width: 870px) {
+        nav.main-navigation .menu li a {
+          font-size: 16px;
+          font-size: 1.6rem;
+          padding: 0 0.75em; } }
     nav.main-navigation .menu li:hover > a {
       background: white;
       background: rgba(255, 255, 255, 0.5); }
-    /* line 36, sass/_navigation.scss */
     nav.main-navigation .menu li ul {
       background: white;
       background: rgba(255, 255, 255, 0.9);
       top: 65px; }
-      /* line 41, sass/_navigation.scss */
       nav.main-navigation .menu li ul li:hover > a {
         background: #45ead2; }
 
-/* line 49, sass/_navigation.scss */
 .main-small-navigation {
   background: white;
   background: rgba(255, 255, 255, 0.7);
@@ -246,36 +292,39 @@ nav.main-navigation {
   bottom: 0;
   text-align: center;
   width: 100%; }
-  /* line 59, sass/_navigation.scss */
   .main-small-navigation .menu-toggle {
     font-size: 24px;
     font-size: 2.4rem;
     text-align: center; }
+  .main-small-navigation #menu-primary {
+    position: absolute;
+    top: 4.25em;
+    bottom: auto;
+    z-index: 100;
+    background: white;
+    background: rgba(255, 255, 255, 0.7); }
+    .main-small-navigation #menu-primary ul li {
+      list-style: none; }
 
 /*--------------------------------------------------------------
 5.1 - Links
 --------------------------------------------------------------*/
-/* line 72, sass/_navigation.scss */
 a,
 a:active,
 a:visited {
   color: #fd7e23;
   text-decoration: none; }
 
-/* line 79, sass/_navigation.scss */
 a:hover {
   color: #ffc097; }
 
-/* line 84, sass/_navigation.scss */
 #colophon a,
 #colophon a:active,
 #colophon a:visited {
   color: #555e68;
   text-shadow: 1px 1px 1px #fff; }
-/* line 91, sass/_navigation.scss */
 #colophon a:hover {
   color: #555e68; }
-/* line 95, sass/_navigation.scss */
 #colophon a.site-info-network {
   color: #ffc097;
   text-shadow: 1px 1px 1px #000; }
@@ -283,7 +332,6 @@ a:hover {
 /*--------------------------------------------------------------
 6.0 - Widgets
 --------------------------------------------------------------*/
-/* line 4, sass/_widgets.scss */
 #primary-sidebar aside h1 {
   background: #fd7e23;
   color: #fff;
@@ -293,43 +341,53 @@ a:hover {
   padding: 24px 0 0 0;
   text-align: center;
   text-transform: uppercase; }
-/* line 15, sass/_widgets.scss */
 #primary-sidebar aside a {
   text-decoration: none; }
-/* line 19, sass/_widgets.scss */
 #primary-sidebar aside ul {
   list-style: none;
   margin: 0 0 1.5em 0; }
-  /* line 23, sass/_widgets.scss */
   #primary-sidebar aside ul li {
     padding: .5em; }
 
 /* After Header Widgets */
-/* line 31, sass/_widgets.scss */
 #after-header-widgets {
   clear: both;
   margin: 40px auto;
   overflow: hidden;
-  width: 1100px; }
-  /* line 37, sass/_widgets.scss */
+  width: 100%;
+  max-width: 1100px; }
   #after-header-widgets .widget {
     float: left;
     text-align: center;
     width: 25%; }
-    /* line 42, sass/_widgets.scss */
+    @media (max-width: 640px) {
+      #after-header-widgets .widget {
+        width: 47.5%;
+        margin: 0 1% 1em 1%;
+        overflow-wrap: break-word;
+        min-height: 330px;
+        min-height: 33rem; } }
+    @media (max-width: 480px) {
+      #after-header-widgets .widget {
+        float: none;
+        width: 95%;
+        margin: 1em auto;
+        min-height: auto; } }
     #after-header-widgets .widget img {
       -webkit-transition: all 200ms ease-in-out;
       -moz-transition: all 200ms ease-in-out;
       -ms-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
-    /* line 46, sass/_widgets.scss */
     #after-header-widgets .widget:hover img {
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1);
       transform: scale(1.1); }
+
+#searchform .field {
+  max-width: 100%; }
 
 /*--------------------------------------------------------------
 7.0 -

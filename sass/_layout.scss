@@ -10,31 +10,67 @@ body {
 #masthead nav div > ul {
 	float: none;
 	margin: 0 auto;
-	width: $site-width;
+	width: 100%;
 }
 
 
 #masthead {
-	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgSub.jpg") center top no-repeat #000;
+	background: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_header-bgSub-opt.jpg") center top no-repeat #000;
 	height: $subheader-height;
 	position: relative;
+		
+	@include bp(medium) {
+		height: 380px;					
+	}
+
+	@include bp(small) {
+		height: 250px;
+	}
 
 	.home & {
-		background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_header-bgImg-fade.jpg") center top no-repeat #000;
+		background: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_header-bgImg-fade-opt.jpg") center top no-repeat #000;
 		height: $home-header-height;
+		
+		@include bp(medium) {
+			height: 380px;					
+		}
+	
+		@include bp(small) {
+			height: 250px;
+		}
 	}
 
 	.site-title {
 		text-align: center;
 
 		a {
-			content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_logo.png");
+			background-image: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_logo-opt.png");
+			background-size: contain;
+			background-position: center top;
+			background-repeat: no-repeat;
 			font-size: 0px;
 			margin: 0 auto;
 			height: 300px;
+			display: block;
 
 			.home & {
-				height: 527px
+				height: 527px;
+		
+				@include bp(large) {
+					height: 449px;					
+				}
+				
+				@include bp(medium) {
+					height: 300px;					
+				}
+			
+				@include bp(small) {
+					height: 160px;
+				}
+			}
+			
+			@include bp(small) {
+				height: 160px;
 			}
 		}
 	}
@@ -48,31 +84,64 @@ body {
 /* Content & Sidebar */
 #page {
 	background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center $subheader-height repeat-x;
+	
+	@include bp(medium) {
+		background-position: center $subheader-height-medium;			
+	}
+
+	@include bp(small) {
+		background-position: center $subheader-height-small;
+	}
 
 	.home & {
 		background: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_tileBG-features.png") center $home-header-height repeat-x;
+	
+		@include bp(medium) {
+			background-position: center $subheader-height-medium;			
+		}
+
+		@include bp(small) {
+			background-position: center $subheader-height-small;
+		}
 	}
 }
 
 #main {
 	margin: 0 auto;
-	width: $site-width;
+	width: 100%;
+	max-width: $site-width;
+	
+	@include scut-clearfix;
 }
 
 #colophon {
 	clear: both;
 	margin: 0 auto;
-	width: $site-width;
+	width: 100%;
 }
 
 #primary {
 	float: left;
-	width: 820px;
+	width: 72%;
+	margin-left: 1.5%;
+	
+	@include bp(medium) {
+		float: none;
+		width: 90%;
+		margin: 1em auto;
+	}
 }
 
 #secondary {
 	float: right;
-	width: 250px;
+	width: 22%;
+	margin-right: 1.5%;
+	
+	@include bp(medium) {
+		float: none;
+		width: 90%;
+		margin: 1em auto;
+	}
 }
 
 /* Footer */
@@ -92,5 +161,11 @@ body {
 	.site-info-network {
 		position: absolute;
 		top: 12px;
+		left: 4px;
+	
+		@include bp(small) {
+			top: 6px;
+			@include scut-rem-fallback(11);
+		}
 	}
 }

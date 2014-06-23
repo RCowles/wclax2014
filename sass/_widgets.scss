@@ -32,12 +32,27 @@
 	clear: both;
 	margin: 40px auto;
 	overflow: hidden;
-	width: $site-width;
+	width: 100%;
+	max-width: $site-width;
 
 	.widget {
 		float: left;
 		text-align: center;
 		width: 25%;
+			
+		@include bp(medium) {
+			width: 47.5%;
+			margin: 0 1% 1em 1%;
+			overflow-wrap: break-word;
+			@include scut-rem-fallback(330, min-height);
+		}
+			
+		@include bp(small) {
+			float: none;
+			width: 95%;
+			margin: 1em auto;
+			min-height: auto;
+		}
 
 		img {
 			@include transition(all, 200ms, ease-in-out);
@@ -46,5 +61,11 @@
 		&:hover img  {
 			@include transform(scale(1.1));
 		}
+	}
+}
+
+#searchform {
+	.field {
+		max-width: 100%;
 	}
 }
