@@ -33,6 +33,7 @@
 	margin: 40px auto;
 	overflow: hidden;
 	width: 100%;
+	max-width: $site-width;
 
 	.widget {
 		float: left;
