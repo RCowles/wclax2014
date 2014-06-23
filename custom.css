@@ -120,10 +120,13 @@ body {
   #masthead .site-title {
     text-align: center; }
     #masthead .site-title a {
-      content: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_logo-opt.png");
+      background-image: url("http://2014.la.wordcamp.org/files/2014/06/wcla14_logo-opt.png");
+      background-size: contain;
+      background-position: center top;
       font-size: 0px;
       margin: 0 auto;
-      height: 300px; }
+      height: 300px;
+      display: block; }
       .home #masthead .site-title a {
         height: 527px; }
         @media (max-width: 870px) {
@@ -161,7 +164,8 @@ body {
 
 #main {
   margin: 0 auto;
-  width: 100%; }
+  width: 100%;
+  max-width: 1100px; }
   #main:after {
     content: "";
     display: table;
@@ -243,6 +247,10 @@ nav.main-navigation {
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
   bottom: 0; }
+  nav.main-navigation .menu-primary-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto; }
   nav.main-navigation .menu {
     height: 65px;
     line-height: 65px; }
@@ -345,7 +353,8 @@ a:hover {
   clear: both;
   margin: 40px auto;
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  max-width: 1100px; }
   #after-header-widgets .widget {
     float: left;
     text-align: center;
