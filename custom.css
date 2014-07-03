@@ -12,19 +12,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
 1.0 - Variables
-	1.1 - Fonts
-	1.2 - Colors
+  1.1 - Fonts
+  1.2 - Colors
 2.0 - Typography
-	2.1 - Header
+  2.1 - Header
 3.0 - Elements and layout
-	3.1 - Elements
-	3.2 - Layout
-	3.3 - Subpage layouts
+  3.1 - Elements
+  3.2 - Layout
+  3.3 - Subpage layouts
 4.0 - Forms
 5.0 - Navigation
-	5.1 - Links
-	5.2 - Menus
-	5.3 - Secondary toggle
+  5.1 - Links
+  5.2 - Menus
+  5.3 - Secondary toggle
 6.0 - Widgets
 
 --------------------------------------------------------------*/
@@ -227,12 +227,55 @@ body {
     float: left;
     padding: 1%;
     width: 23%; }
+    @media (max-width: 870px) {
+      .wcorg-organizers .wcorg-organizer {
+        width: 48%; } }
     .wcorg-organizers .wcorg-organizer img {
       margin: 1em 0;
       display: block;
       width: 80%;
       padding: 10%;
       background: #dde3e6; }
+
+/* Responsive columns for use inside page/post content since we can't use shortcodes */
+.cols2 .cols, .cols3 .cols, .cols4 .cols {
+  padding: 1.5%; }
+
+.cols2 {
+  overflow: hidden;
+  *zoom: 1; }
+  .cols2 .col {
+    float: left;
+    width: 47%; }
+    @media (max-width: 640px) {
+      .cols2 .col {
+        float: none;
+        width: 97%; } }
+
+.cols3 {
+  overflow: hidden;
+  *zoom: 1; }
+  .cols3 .col {
+    float: left;
+    width: 30%; }
+    @media (max-width: 640px) {
+      .cols3 .col {
+        float: none;
+        width: 97%; } }
+
+.cols4 {
+  overflow: hidden;
+  *zoom: 1; }
+  .cols4 .col {
+    float: left;
+    width: 22%; }
+    @media (max-width: 870px) {
+      .cols4 .col {
+        width: 47%; } }
+    @media (max-width: 640px) {
+      .cols4 .col {
+        float: none;
+        width: 97%; } }
 
 /*--------------------------------------------------------------
 4.0 - Forms
