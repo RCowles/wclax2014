@@ -27,6 +27,50 @@
 
 /* Attendees Page */
 
+/* Schedule Page(s) */
+.wcpt-schedule {
+	margin: 1em 0;
+	thead th {
+		background: $color__orange-dark;
+		color: white;
+		text-transform: uppercase;
+	}
+	th, td {
+		padding: 0.5em;
+	}
+	td {
+		border-bottom: 1px solid $color__orange;
+		padding: 1em 0.5em;
+	}
+	.wcpt-session-title {
+		display: block;
+		font-size: 1.125em;
+	}
+	.wcpt-col-time {
+		width: 14%;
+	}
+	.wcpt-col-track {
+		width: 28%;
+	}
+	.wcpt-session-speakers {
+		display: block;
+		font-style: italic;
+		margin: 1em 0 0 0;
+		&:before {
+			content: 'Speaker: ';
+		}
+		a {
+			color: darken($color__teal,20%);
+		}
+	}
+	.lunch-break td {
+		background: $color__orange-light;
+		.scb-session-lunch-break {
+			text-align: center;
+		}
+	}
+}
+
 
 
 /* Responsive columns for use inside page/post content since we can't use shortcodes */
