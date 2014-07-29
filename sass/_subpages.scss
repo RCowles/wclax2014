@@ -26,6 +26,26 @@
 }
 
 /* Attendees Page */
+#tix-attendees .tix-attendee-list {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		display: inline-block;
+		margin-left: -4px;
+		padding: 1.5%;
+		text-align: center;
+		width: 22%;
+		vertical-align: top;
+
+		@include bp(large) {
+			width: 30%;
+		}
+		@include bp(small) {
+			width: 47%;
+		}
+	}
+}
 
 /* Schedule Page(s) */
 .wcpt-schedule {
