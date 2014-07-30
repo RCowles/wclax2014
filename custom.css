@@ -310,98 +310,107 @@ body {
       /* line 33, sass/_subpages.scss */
       #tix-attendees .tix-attendee-list li {
         width: 47%; } }
+    /* line 48, sass/_subpages.scss */
+    #tix-attendees .tix-attendee-list li .avatar {
+      height: auto;
+      float: none;
+      max-width: 50%;
+      width: auto; }
+    /* line 55, sass/_subpages.scss */
+    #tix-attendees .tix-attendee-list li .tix-field {
+      margin-left: 0; }
 
 /* Schedule Page(s) */
-/* line 51, sass/_subpages.scss */
+/* line 62, sass/_subpages.scss */
 .wcpt-schedule {
   margin: 1em 0; }
-  /* line 53, sass/_subpages.scss */
+  /* line 64, sass/_subpages.scss */
   .wcpt-schedule thead th {
     background: #fd7e23;
     color: white;
     text-transform: uppercase; }
-  /* line 58, sass/_subpages.scss */
+  /* line 69, sass/_subpages.scss */
   .wcpt-schedule th, .wcpt-schedule td {
     padding: 0.5em; }
-  /* line 61, sass/_subpages.scss */
+  /* line 72, sass/_subpages.scss */
   .wcpt-schedule td {
     border-bottom: 1px solid #ffc097;
     padding: 1em 0.5em; }
-  /* line 65, sass/_subpages.scss */
+  /* line 76, sass/_subpages.scss */
   .wcpt-schedule .wcpt-session-title {
     display: block;
     font-size: 1.125em; }
-  /* line 69, sass/_subpages.scss */
+  /* line 80, sass/_subpages.scss */
   .wcpt-schedule .wcpt-col-time {
     width: 14%; }
-  /* line 72, sass/_subpages.scss */
+  /* line 83, sass/_subpages.scss */
   .wcpt-schedule .wcpt-col-track {
     width: 28%; }
-  /* line 75, sass/_subpages.scss */
+  /* line 86, sass/_subpages.scss */
   .wcpt-schedule .wcpt-session-speakers {
     display: block;
     font-style: italic;
     margin: 1em 0 0 0; }
-    /* line 79, sass/_subpages.scss */
+    /* line 90, sass/_subpages.scss */
     .wcpt-schedule .wcpt-session-speakers:before {
       content: 'Speaker: '; }
-    /* line 82, sass/_subpages.scss */
+    /* line 93, sass/_subpages.scss */
     .wcpt-schedule .wcpt-session-speakers a {
       color: #14b59d; }
-  /* line 86, sass/_subpages.scss */
+  /* line 97, sass/_subpages.scss */
   .wcpt-schedule .lunch-break td {
     background: #ffdfcb; }
-    /* line 88, sass/_subpages.scss */
+    /* line 99, sass/_subpages.scss */
     .wcpt-schedule .lunch-break td .scb-session-lunch-break {
       text-align: center; }
 
 /* Responsive columns for use inside page/post content since we can't use shortcodes */
-/* line 99, sass/_subpages.scss */
+/* line 110, sass/_subpages.scss */
 .cols2 .cols, .cols3 .cols, .cols4 .cols {
   padding: 1.5%; }
 
-/* line 104, sass/_subpages.scss */
+/* line 115, sass/_subpages.scss */
 .cols2 {
   overflow: hidden;
   *zoom: 1; }
-  /* line 106, sass/_subpages.scss */
+  /* line 117, sass/_subpages.scss */
   .cols2 .col {
     float: left;
     width: 47%; }
     @media (max-width: 640px) {
-      /* line 106, sass/_subpages.scss */
+      /* line 117, sass/_subpages.scss */
       .cols2 .col {
         float: none;
         width: 97%; } }
 
-/* line 116, sass/_subpages.scss */
+/* line 127, sass/_subpages.scss */
 .cols3 {
   overflow: hidden;
   *zoom: 1; }
-  /* line 118, sass/_subpages.scss */
+  /* line 129, sass/_subpages.scss */
   .cols3 .col {
     float: left;
     width: 30%; }
     @media (max-width: 640px) {
-      /* line 118, sass/_subpages.scss */
+      /* line 129, sass/_subpages.scss */
       .cols3 .col {
         float: none;
         width: 97%; } }
 
-/* line 128, sass/_subpages.scss */
+/* line 139, sass/_subpages.scss */
 .cols4 {
   overflow: hidden;
   *zoom: 1; }
-  /* line 130, sass/_subpages.scss */
+  /* line 141, sass/_subpages.scss */
   .cols4 .col {
     float: left;
     width: 22%; }
     @media (max-width: 870px) {
-      /* line 130, sass/_subpages.scss */
+      /* line 141, sass/_subpages.scss */
       .cols4 .col {
         width: 47%; } }
     @media (max-width: 640px) {
-      /* line 130, sass/_subpages.scss */
+      /* line 141, sass/_subpages.scss */
       .cols4 .col {
         float: none;
         width: 97%; } }

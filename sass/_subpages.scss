@@ -44,6 +44,17 @@
 		@include bp(small) {
 			width: 47%;
 		}
+
+		.avatar {
+			height: auto;
+			float: none;
+			max-width: 50%;
+			width: auto;
+		}
+
+		.tix-field {
+			margin-left: 0;
+		}
 	}
 }
 
