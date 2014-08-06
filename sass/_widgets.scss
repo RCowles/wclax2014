@@ -39,14 +39,18 @@
 		float: left;
 		text-align: center;
 		width: 25%;
-			
+
+		& > div {
+			padding: 0 1em;
+		}
+
 		@include bp(medium) {
 			width: 47.5%;
 			margin: 0 1% 1em 1%;
 			overflow-wrap: break-word;
 			@include scut-rem-fallback(330, min-height);
 		}
-			
+
 		@include bp(small) {
 			float: none;
 			width: 95%;

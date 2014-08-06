@@ -23,6 +23,31 @@
 			background: $color__gray-light;
 		}
 	}
+	.sharedaddy {
+		display: none;
+	}
+}
+
+/* Speakers Page */
+.wcb_speaker {
+	.sharedaddy {
+		display: none;
+	}
+	.avatar {
+		float: left;
+		margin: 0 1em 0.5em 0;
+	}
+}
+
+.speaker-gravatar-list {
+	margin-bottom: 2.25em;
+}
+
+/* Sponsors Page */
+.wcb_sponsor {
+	.sharedaddy {
+		display: none;
+	}
 }
 
 /* Attendees Page */
@@ -82,7 +107,7 @@
 }
 
 .cols2 {
-	@include clearfix;
+	@include scut-clearfix;
 	.col {
 		float: left;
 		width: 47%;
@@ -94,7 +119,7 @@
 }
 
 .cols3 {
-	@include clearfix;
+	@include scut-clearfix;
 	.col {
 		float: left;
 		width: 30%;
@@ -106,7 +131,7 @@
 }
 
 .cols4 {
-	@include clearfix;
+	@include scut-clearfix;
 	.col {
 		float: left;
 		width: 22%;

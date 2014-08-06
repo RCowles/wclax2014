@@ -35,3 +35,57 @@ h4 {
 p {
 
 }
+
+.entry-meta {
+	font-size: 0.9em;
+	color: lighten($color__gray-dark,10%);
+}
+
+.hentry {
+	border-bottom: 1px dotted $color__orange-dark;
+	padding-bottom: 1.5em;
+}
+
+.entry-content {
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0.5em 0.222em;
+	}
+	h1 { font-size: 2.25em; }
+	h2 { font-size: 1.688em; }
+	h3 { font-size: 1.5em; }
+	h4 { font-size: 1.125em; }
+	h5 { font-size: 1em; }
+	h6 { font-size: 0.75em; }
+}
+
+.comments-title {
+	font-size: 1.688em;
+	margin: 0.5em 0 0.222em;
+}
+
+.commentlist {
+	list-style-type: none;
+	margin: 1.5em 0;
+	li.comment {
+		border-bottom: 1px dotted $color__orange-dark;
+		margin: 0 0 1.5em 0;
+		padding: 0 0 1.5em 0;
+	}
+	footer {
+		overflow: hidden;
+	}
+	.avatar {
+		float: left;
+		margin: 0 1em 0.5em 0;
+	}
+	.comment-meta {
+		font-size: 0.9em;
+		color: lighten($color__gray-dark,10%);
+	}
+	.reply {
+		text-align: right;
+	}
+	.comment-content {
+		margin: 1em 0 0 1em;
+	}
+}

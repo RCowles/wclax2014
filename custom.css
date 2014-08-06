@@ -73,8 +73,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 22, sass/_typography.scss */
 h1.entry-title {
-  font-size: 38px;
-  font-size: 3.8rem; }
+  font-size: 48px;
+  font-size: 4.8rem; }
 
 /* line 28, sass/_typography.scss */
 h4 {
@@ -83,15 +83,80 @@ h4 {
   font-weight: 700;
   margin: .5em 0; }
 
+/* line 39, sass/_typography.scss */
+.entry-meta {
+  font-size: 0.9em;
+  color: #6c7784; }
+
+/* line 44, sass/_typography.scss */
+.hentry {
+  border-bottom: 1px dotted #fd7e23;
+  padding-bottom: 1.5em; }
+
+/* line 50, sass/_typography.scss */
+.entry-content h1, .entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6 {
+  margin: 0.5em 0.222em; }
+/* line 53, sass/_typography.scss */
+.entry-content h1 {
+  font-size: 2.25em; }
+/* line 54, sass/_typography.scss */
+.entry-content h2 {
+  font-size: 1.688em; }
+/* line 55, sass/_typography.scss */
+.entry-content h3 {
+  font-size: 1.5em; }
+/* line 56, sass/_typography.scss */
+.entry-content h4 {
+  font-size: 1.125em; }
+/* line 57, sass/_typography.scss */
+.entry-content h5 {
+  font-size: 1em; }
+/* line 58, sass/_typography.scss */
+.entry-content h6 {
+  font-size: 0.75em; }
+
+/* line 61, sass/_typography.scss */
+.comments-title {
+  font-size: 1.688em;
+  margin: 0.5em 0 0.222em; }
+
+/* line 66, sass/_typography.scss */
+.commentlist {
+  list-style-type: none;
+  margin: 1.5em 0; }
+  /* line 69, sass/_typography.scss */
+  .commentlist li.comment {
+    border-bottom: 1px dotted #fd7e23;
+    margin: 0 0 1.5em 0;
+    padding: 0 0 1.5em 0; }
+  /* line 74, sass/_typography.scss */
+  .commentlist footer {
+    overflow: hidden; }
+  /* line 77, sass/_typography.scss */
+  .commentlist .avatar {
+    float: left;
+    margin: 0 1em 0.5em 0; }
+  /* line 81, sass/_typography.scss */
+  .commentlist .comment-meta {
+    font-size: 0.9em;
+    color: #6c7784; }
+  /* line 85, sass/_typography.scss */
+  .commentlist .reply {
+    text-align: right; }
+  /* line 88, sass/_typography.scss */
+  .commentlist .comment-content {
+    margin: 1em 0 0 1em; }
+
 /*--------------------------------------------------------------
 3.0 - Elements and Layout
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 3.1 - Elements
 --------------------------------------------------------------*/
-/* line 4, sass/_elements.scss */
+/* line 5, sass/_elements.scss */
 hr {
-  clear: both; }
+  clear: both;
+  margin: 1em 0; }
 
 /*--------------------------------------------------------------
 3.2 - Layout
@@ -234,31 +299,25 @@ body {
       width: 90%;
       margin: 1em auto; } }
 
-/* Tickets */
-/* line 150, sass/_layout.scss */
-.tix_tickets_table th,
-.tix_tickets_table td {
-  padding: 5px; }
-
 /* Footer */
-/* line 155, sass/_layout.scss */
+/* line 148, sass/_layout.scss */
 #colophon {
   padding: 20px 0; }
-  /* line 158, sass/_layout.scss */
+  /* line 151, sass/_layout.scss */
   #colophon .site-info-generator {
     display: block;
     text-align: center; }
-    /* line 162, sass/_layout.scss */
+    /* line 155, sass/_layout.scss */
     #colophon .site-info-generator:before {
       content: url("http://2014.la.wordcamp.org/files/2014/05/wcla14_greyW-transparentBg.png");
       display: block; }
-  /* line 168, sass/_layout.scss */
+  /* line 161, sass/_layout.scss */
   #colophon .site-info-network {
     position: absolute;
     top: 12px;
     left: 4px; }
     @media (max-width: 480px) {
-      /* line 168, sass/_layout.scss */
+      /* line 161, sass/_layout.scss */
       #colophon .site-info-network {
         top: 6px;
         font-size: 11px;
@@ -288,102 +347,126 @@ body {
       width: 80%;
       padding: 10%;
       background: #dde3e6; }
+  /* line 26, sass/_subpages.scss */
+  .wcorg-organizers .sharedaddy {
+    display: none; }
+
+/* Speakers Page */
+/* line 33, sass/_subpages.scss */
+.wcb_speaker .sharedaddy {
+  display: none; }
+/* line 36, sass/_subpages.scss */
+.wcb_speaker .avatar {
+  float: left;
+  margin: 0 1em 0.5em 0; }
+
+/* line 42, sass/_subpages.scss */
+.speaker-gravatar-list {
+  margin-bottom: 2.25em; }
+
+/* Sponsors Page */
+/* line 48, sass/_subpages.scss */
+.wcb_sponsor .sharedaddy {
+  display: none; }
 
 /* Attendees Page */
 /* Schedule Page(s) */
-/* line 31, sass/_subpages.scss */
+/* line 56, sass/_subpages.scss */
 .wcpt-schedule {
   margin: 1em 0; }
-  /* line 33, sass/_subpages.scss */
+  /* line 58, sass/_subpages.scss */
   .wcpt-schedule thead th {
     background: #fd7e23;
     color: white;
     text-transform: uppercase; }
-  /* line 38, sass/_subpages.scss */
+  /* line 63, sass/_subpages.scss */
   .wcpt-schedule th, .wcpt-schedule td {
     padding: 0.5em; }
-  /* line 41, sass/_subpages.scss */
+  /* line 66, sass/_subpages.scss */
   .wcpt-schedule td {
     border-bottom: 1px solid #ffc097;
     padding: 1em 0.5em; }
-  /* line 45, sass/_subpages.scss */
+  /* line 70, sass/_subpages.scss */
   .wcpt-schedule .wcpt-session-title {
     display: block;
     font-size: 1.125em; }
-  /* line 49, sass/_subpages.scss */
+  /* line 74, sass/_subpages.scss */
   .wcpt-schedule .wcpt-col-time {
     width: 14%; }
-  /* line 52, sass/_subpages.scss */
+  /* line 77, sass/_subpages.scss */
   .wcpt-schedule .wcpt-col-track {
     width: 28%; }
-  /* line 55, sass/_subpages.scss */
+  /* line 80, sass/_subpages.scss */
   .wcpt-schedule .wcpt-session-speakers {
     display: block;
     font-style: italic;
     margin: 1em 0 0 0; }
-    /* line 59, sass/_subpages.scss */
+    /* line 84, sass/_subpages.scss */
     .wcpt-schedule .wcpt-session-speakers:before {
       content: 'Speaker: '; }
-    /* line 62, sass/_subpages.scss */
+    /* line 87, sass/_subpages.scss */
     .wcpt-schedule .wcpt-session-speakers a {
       color: #14b59d; }
-  /* line 66, sass/_subpages.scss */
+  /* line 91, sass/_subpages.scss */
   .wcpt-schedule .lunch-break td {
     background: #ffdfcb; }
-    /* line 68, sass/_subpages.scss */
+    /* line 93, sass/_subpages.scss */
     .wcpt-schedule .lunch-break td .scb-session-lunch-break {
       text-align: center; }
 
 /* Responsive columns for use inside page/post content since we can't use shortcodes */
-/* line 79, sass/_subpages.scss */
+/* line 104, sass/_subpages.scss */
 .cols2 .cols, .cols3 .cols, .cols4 .cols {
   padding: 1.5%; }
 
-/* line 84, sass/_subpages.scss */
-.cols2 {
-  overflow: hidden;
-  *zoom: 1; }
-  /* line 86, sass/_subpages.scss */
-  .cols2 .col {
-    float: left;
-    width: 47%; }
-    @media (max-width: 640px) {
-      /* line 86, sass/_subpages.scss */
-      .cols2 .col {
-        float: none;
-        width: 97%; } }
+/* line 10, sass/_scut.scss */
+.cols2:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 111, sass/_subpages.scss */
+.cols2 .col {
+  float: left;
+  width: 47%; }
+  @media (max-width: 640px) {
+    /* line 111, sass/_subpages.scss */
+    .cols2 .col {
+      float: none;
+      width: 97%; } }
 
-/* line 96, sass/_subpages.scss */
-.cols3 {
-  overflow: hidden;
-  *zoom: 1; }
-  /* line 98, sass/_subpages.scss */
-  .cols3 .col {
-    float: left;
-    width: 30%; }
-    @media (max-width: 640px) {
-      /* line 98, sass/_subpages.scss */
-      .cols3 .col {
-        float: none;
-        width: 97%; } }
+/* line 10, sass/_scut.scss */
+.cols3:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 123, sass/_subpages.scss */
+.cols3 .col {
+  float: left;
+  width: 30%; }
+  @media (max-width: 640px) {
+    /* line 123, sass/_subpages.scss */
+    .cols3 .col {
+      float: none;
+      width: 97%; } }
 
-/* line 108, sass/_subpages.scss */
-.cols4 {
-  overflow: hidden;
-  *zoom: 1; }
-  /* line 110, sass/_subpages.scss */
-  .cols4 .col {
-    float: left;
-    width: 22%; }
-    @media (max-width: 870px) {
-      /* line 110, sass/_subpages.scss */
-      .cols4 .col {
-        width: 47%; } }
-    @media (max-width: 640px) {
-      /* line 110, sass/_subpages.scss */
-      .cols4 .col {
-        float: none;
-        width: 97%; } }
+/* line 10, sass/_scut.scss */
+.cols4:after {
+  content: "";
+  display: table;
+  clear: both; }
+/* line 135, sass/_subpages.scss */
+.cols4 .col {
+  float: left;
+  width: 22%; }
+  @media (max-width: 870px) {
+    /* line 135, sass/_subpages.scss */
+    .cols4 .col {
+      width: 47%; } }
+  @media (max-width: 640px) {
+    /* line 135, sass/_subpages.scss */
+    .cols4 .col {
+      float: none;
+      width: 97%; } }
 
 /*--------------------------------------------------------------
 4.0 - Forms
@@ -534,6 +617,9 @@ a:hover {
     float: left;
     text-align: center;
     width: 25%; }
+    /* line 43, sass/_widgets.scss */
+    #after-header-widgets .widget > div {
+      padding: 0 1em; }
     @media (max-width: 640px) {
       /* line 38, sass/_widgets.scss */
       #after-header-widgets .widget {
@@ -549,14 +635,14 @@ a:hover {
         width: 95%;
         margin: 1em auto;
         min-height: auto; } }
-    /* line 57, sass/_widgets.scss */
+    /* line 61, sass/_widgets.scss */
     #after-header-widgets .widget img {
       -webkit-transition: all 200ms ease-in-out;
       -moz-transition: all 200ms ease-in-out;
       -ms-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out; }
-    /* line 61, sass/_widgets.scss */
+    /* line 65, sass/_widgets.scss */
     #after-header-widgets .widget:hover img {
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
@@ -564,6 +650,25 @@ a:hover {
       -o-transform: scale(1.1);
       transform: scale(1.1); }
 
-/* line 68, sass/_widgets.scss */
+/* line 72, sass/_widgets.scss */
 #searchform .field {
   max-width: 100%; }
+
+/*--------------------------------------------------------------
+7.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+8.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+9.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+10.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+11.0 -
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+12.0 -
+--------------------------------------------------------------*/
