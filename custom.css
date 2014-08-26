@@ -512,20 +512,34 @@ nav.main-navigation {
           font-size: 16px;
           font-size: 1.6rem;
           padding: 0 0.75em; } }
-    /* line 43, sass/_navigation.scss */
+    /* line 44, sass/_navigation.scss */
     nav.main-navigation .menu li:hover > a {
       background: white;
       background: rgba(255, 255, 255, 0.5); }
-    /* line 48, sass/_navigation.scss */
+    /* line 49, sass/_navigation.scss */
     nav.main-navigation .menu li ul {
       background: white;
       background: rgba(255, 255, 255, 0.9);
       top: 65px; }
-      /* line 53, sass/_navigation.scss */
+      /* line 54, sass/_navigation.scss */
       nav.main-navigation .menu li ul li:hover > a {
         background: #45ead2; }
+    /* line 60, sass/_navigation.scss */
+    nav.main-navigation .menu li.menu-item-has-children > a {
+      padding-right: 26px; }
+      /* line 62, sass/_navigation.scss */
+      nav.main-navigation .menu li.menu-item-has-children > a:after {
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid black;
+        content: '';
+        height: 0;
+        position: absolute;
+        right: 8px;
+        top: 1.5em;
+        width: 0; }
 
-/* line 61, sass/_navigation.scss */
+/* line 78, sass/_navigation.scss */
 .main-small-navigation {
   background: white;
   background: rgba(255, 255, 255, 0.7);
@@ -535,12 +549,12 @@ nav.main-navigation {
   bottom: 0;
   text-align: center;
   width: 100%; }
-  /* line 71, sass/_navigation.scss */
+  /* line 88, sass/_navigation.scss */
   .main-small-navigation .menu-toggle {
     font-size: 24px;
     font-size: 2.4rem;
     text-align: center; }
-  /* line 80, sass/_navigation.scss */
+  /* line 97, sass/_navigation.scss */
   .main-small-navigation #menu-primary {
     position: absolute;
     top: 4.25em;
@@ -548,34 +562,34 @@ nav.main-navigation {
     z-index: 100;
     background: white;
     background: rgba(255, 255, 255, 0.7); }
-    /* line 88, sass/_navigation.scss */
+    /* line 105, sass/_navigation.scss */
     .main-small-navigation #menu-primary ul li {
       list-style: none; }
 
 /*--------------------------------------------------------------
 5.1 - Links
 --------------------------------------------------------------*/
-/* line 99, sass/_navigation.scss */
+/* line 116, sass/_navigation.scss */
 a,
 a:active,
 a:visited {
   color: #fd7e23;
   text-decoration: none; }
 
-/* line 104, sass/_navigation.scss */
+/* line 121, sass/_navigation.scss */
 a:hover {
   color: #ffc097; }
 
-/* line 111, sass/_navigation.scss */
+/* line 128, sass/_navigation.scss */
 #colophon a,
 #colophon a:active,
 #colophon a:visited {
   color: #555e68;
   text-shadow: 1px 1px 1px #fff; }
-/* line 116, sass/_navigation.scss */
+/* line 133, sass/_navigation.scss */
 #colophon a:hover {
   color: #555e68; }
-/* line 120, sass/_navigation.scss */
+/* line 137, sass/_navigation.scss */
 #colophon a.site-info-network {
   color: #ffc097;
   text-shadow: 1px 1px 1px #000; }

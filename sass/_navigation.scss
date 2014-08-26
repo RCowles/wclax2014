@@ -11,7 +11,7 @@ nav.main-navigation {
 		//background: rgb(255, 255, 255);
 		//background: rgba(255, 255, 255, 1.0);
 	}
-	
+
 	.menu-primary-container {
 		width: 100%;
 		max-width: $site-width;
@@ -32,12 +32,13 @@ nav.main-navigation {
 				text-shadow: 1px 1px 1px #fff;
 				text-transform: uppercase;
 				@include transition(all, 200ms, ease-in-out);
-					
+
 				@include bp(large) {
 					font-size: 16px;
 					font-size: 1.6rem;
 					padding: 0 0.75em;
 				}
+
 			}
 
 			&:hover > a {
@@ -52,6 +53,22 @@ nav.main-navigation {
 
 				li:hover > a {
 					background: $color__teal;
+				}
+			}
+		}
+		li.menu-item-has-children {
+			& > a {
+				padding-right: 26px;
+				&:after {
+					border-left: 7px solid transparent;
+					border-right: 7px solid transparent;
+					border-top: 7px solid black;
+					content: '';
+					height: 0;
+					position: absolute;
+					right: 8px;
+					top: 1.5em;
+					width: 0;
 				}
 			}
 		}
@@ -76,7 +93,7 @@ nav.main-navigation {
 
 	li a {
 	}
-	
+
 	#menu-primary {
 		position: absolute;
 		top: 4.25em;
@@ -84,7 +101,7 @@ nav.main-navigation {
 		z-index: 100;
 		background: rgb(255, 255, 255);
 		background: rgba(255, 255, 255, .7);
-		
+
 		ul li {
 			list-style: none;
 		}
